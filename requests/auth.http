@@ -1,0 +1,21 @@
+###register request
+Post http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username" : "amiraliazimloo2",
+    "email" : "amiraliazimloo123@google.com",
+    "mobile" : "09332255767",
+    "password" : "1234567",
+    "confirm_password" : "1234567"
+}
+
+###login request
+Post http://localhost:3000/auth/login
+Content-Type: application/json
+Authorization: Bearer {{$dotenv token}}
+
+{
+    "username" : "amiraliazimloo",
+    "password" : "1234567"
+}
